@@ -4,25 +4,33 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Fotoground — Real Estate Photo Editing</title>
-  <meta name="description" content="High-consistency real estate photo editing: manual HDR blending, virtual dusk, virtual staging, floor plans, and video. 12–24h TAT, 24/7 support." />
+  <meta name="description" content="Fotoground: Real Estate Photo Editing, Virtual Dusk, Virtual Staging, Floor Plans, Video. Fast 12h turnaround, free trial, bulk discount." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
+    :root{
+      --brand:#f5b301; /* honey yellow */
+      --brand-600:#d99a00;
+      --ink:#111111;
+    }
     html { scroll-behavior: smooth; }
-    .glass { backdrop-filter: blur(10px); background: rgba(255,255,255,0.7); }
-    /* Simple Before/After slider */
-    .ba-container { position: relative; overflow: hidden; }
-    .ba-after { position: absolute; top:0; left:0; height:100%; width:50%; overflow:hidden; }
-    .ba-handle { position:absolute; top:0; left:50%; transform:translateX(-50%); height:100%; width:2px; background:#111; }
+    .glass { backdrop-filter: blur(10px); background: rgba(255,255,255,0.78); }
+    .btn-brand{ background:var(--brand); color:#111; }
+    .btn-brand:hover{ background:var(--brand-600); }
+    .badge{background:var(--brand); color:#111; font-weight:700; padding:2px 8px; border-radius:9999px; font-size:12px}
+    /* Before/After */
+    .ba-container{ position: relative; overflow:hidden;}
+    .ba-after{ position:absolute; top:0; left:0; height:100%; width:50%; overflow:hidden;}
+    .ba-handle{ position:absolute; top:0; left:50%; transform:translateX(-50%); height:100%; width:3px; background:var(--brand); box-shadow:0 0 0 2px rgba(255,255,255,.8);} 
   </style>
 </head>
 <body class="bg-gray-50 text-gray-900" style="font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;">
   <!-- Navbar -->
   <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b">
     <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-      <a href="#" class="font-extrabold text-xl">Fotoground</a>
+      <a href="#" class="font-extrabold text-xl flex items-center gap-2"><span class="inline-block w-2.5 h-2.5 rounded-full" style="background:var(--brand)"></span>Fotoground</a>
       <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
         <a href="#services" class="hover:text-black/80">Services</a>
         <a href="#portfolio" class="hover:text-black/80">Portfolio</a>
@@ -31,19 +39,21 @@
         <a href="#faq" class="hover:text-black/80">FAQ</a>
         <a href="#contact" class="hover:text-black/80">Contact</a>
       </nav>
-      <a href="#contact" class="inline-flex items-center rounded-xl bg-black text-white px-4 py-2 text-sm font-semibold shadow hover:bg-black/90">Get a Quote</a>
+      <a href="#contact" class="inline-flex items-center rounded-xl btn-brand px-4 py-2 text-sm font-semibold shadow">Get a Quote</a>
     </div>
   </header>
 
   <!-- Hero -->
   <section class="relative overflow-hidden">
     <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1501183638710-841dd1904471?q=80&w=1920&auto=format&fit=crop')] bg-cover bg-center"></div>
+    <div class="absolute inset-0" style="background:linear-gradient(180deg, rgba(17,17,17,0.55) 0%, rgba(17,17,17,0.25) 100%)"></div>
     <div class="relative max-w-6xl mx-auto px-4 py-28">
-      <div class="glass max-w-2xl rounded-3xl p-8 shadow-xl">
-        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">Real Estate Photo Editing — Consistent, Fast, and On‑Brand</h1>
-        <p class="mt-4 text-lg">Manual HDR blending • Virtual dusk • Virtual staging • Floor plans • Video. 12–24h turnaround. Unlimited revisions. 24/7 support.</p>
+      <span class="badge">Real Estate Media</span>
+      <div class="max-w-2xl rounded-3xl p-8 shadow-xl bg-white/90">
+        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">Fotoground — Real Estate Photo Editing Services</h1>
+        <p class="mt-4 text-lg">Photo Editing • Virtual Dusk • Virtual Staging • Floor Plans • Video. <strong>12h</strong> turnaround. Free trial & bulk discounts.</p>
         <div class="mt-6 flex gap-3">
-          <a href="#pricing" class="rounded-xl bg-black text-white px-5 py-3 font-semibold">See Pricing</a>
+          <a href="#pricing" class="rounded-xl btn-brand px-5 py-3 font-semibold">See Pricing</a>
           <a href="#portfolio" class="rounded-xl border px-5 py-3 font-semibold">View Work</a>
         </div>
       </div>
@@ -53,10 +63,10 @@
   <!-- Trust bar -->
   <section class="py-8 border-b bg-white">
     <div class="max-w-6xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-      <div><div class="text-2xl font-extrabold">12–24h</div><div class="text-sm text-gray-600">Turnaround</div></div>
+      <div><div class="text-2xl font-extrabold">12h</div><div class="text-sm text-gray-600">Turnaround</div></div>
       <div><div class="text-2xl font-extrabold">24/7</div><div class="text-sm text-gray-600">Support</div></div>
-      <div><div class="text-2xl font-extrabold">15+ yrs</div><div class="text-sm text-gray-600">QC Experience</div></div>
-      <div><div class="text-2xl font-extrabold">100%</div><div class="text-sm text-gray-600">Satisfaction</div></div>
+      <div><div class="text-2xl font-extrabold">Free</div><div class="text-sm text-gray-600">Trial &lt; 25 imgs</div></div>
+      <div><div class="text-2xl font-extrabold">Bulk</div><div class="text-sm text-gray-600">Discount</div></div>
     </div>
   </section>
 
@@ -64,74 +74,59 @@
   <section id="services" class="py-20 bg-gray-50">
     <div class="max-w-6xl mx-auto px-4">
       <h2 class="text-3xl md:text-4xl font-extrabold">Services</h2>
-      <p class="mt-3 text-gray-600 max-w-2xl">End‑to‑end editing for real estate: consistent color, true‑to‑life whites, accurate windows, and magazine polish — at scale.</p>
       <div class="mt-10 grid md:grid-cols-3 gap-6">
-        <!-- Card -->
         <div class="bg-white rounded-2xl p-6 shadow-sm border">
-          <h3 class="font-bold text-lg">Manual HDR Blending</h3>
-          <p class="text-sm text-gray-600 mt-2">Hand‑blended exposures for depth, clean whites, and natural contrast. Window pulls on request.</p>
-          <ul class="mt-4 text-sm list-disc pl-5 text-gray-700 space-y-1">
-            <li>Exposure balance, color cast fix</li>
-            <li>Lens correction, straight lines</li>
-            <li>Sky/grass clean‑ups</li>
-          </ul>
+          <h3 class="font-bold text-lg">Photo Editing (HDR/Flambient/Daylight)</h3>
+          <p class="text-sm text-gray-600 mt-2">From $0.7 per image • 12h TAT</p>
         </div>
         <div class="bg-white rounded-2xl p-6 shadow-sm border">
-          <h3 class="font-bold text-lg">Virtual Dusk</h3>
-          <p class="text-sm text-gray-600 mt-2">Compelling twilight conversions that keep the property believable and sales‑ready.</p>
-          <ul class="mt-4 text-sm list-disc pl-5 text-gray-700 space-y-1">
-            <li>Warm interior glow</li>
-            <li>Realistic sky & reflections</li>
-            <li>Consistent exterior tones</li>
-          </ul>
+          <h3 class="font-bold text-lg">Virtual Dusk (Day-to-Dusk)</h3>
+          <p class="text-sm text-gray-600 mt-2">From $5 per image • 12h TAT</p>
         </div>
         <div class="bg-white rounded-2xl p-6 shadow-sm border">
           <h3 class="font-bold text-lg">Virtual Staging</h3>
-          <p class="text-sm text-gray-600 mt-2">Scandinavian/Magazine style sets. Clean geometry, correct shadows, and scale.</p>
-          <ul class="mt-4 text-sm list-disc pl-5 text-gray-700 space-y-1">
-            <li>Multiple style packs</li>
-            <li>Revision until match</li>
-            <li>2–3 days for sets</li>
-          </ul>
+          <p class="text-sm text-gray-600 mt-2">From $15 per image • 12h TAT</p>
         </div>
         <div class="bg-white rounded-2xl p-6 shadow-sm border">
           <h3 class="font-bold text-lg">Item Removal / Declutter</h3>
-          <p class="text-sm text-gray-600 mt-2">Wires, bins, signboards, cords — removed cleanly with texture rebuild.</p>
+          <p class="text-sm text-gray-600 mt-2">From $1 per image</p>
         </div>
         <div class="bg-white rounded-2xl p-6 shadow-sm border">
-          <h3 class="font-bold text-lg">Floor Plans & Renders</h3>
-          <p class="text-sm text-gray-600 mt-2">2D/3D floor plans from sketches; optional simple exteriors and interiors.</p>
+          <h3 class="font-bold text-lg">Floor Plan</h3>
+          <p class="text-sm text-gray-600 mt-2">2D: From $7 per storey • 3D: Quote Fotoground • 24–48h TAT</p>
         </div>
         <div class="bg-white rounded-2xl p-6 shadow-sm border">
-          <h3 class="font-bold text-lg">Video & Social</h3>
-          <p class="text-sm text-gray-600 mt-2">Walkthrough clips, reels, and agent reels with subtle motion graphics.</p>
+          <h3 class="font-bold text-lg">Video & Slideshow / Social Media</h3>
+          <p class="text-sm text-gray-600 mt-2">Quote Fotoground • 24h TAT</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Before/After -->
+  <!-- Portfolio (Gallery Grid with Before/After modal) -->
   <section id="portfolio" class="py-20 bg-white">
     <div class="max-w-6xl mx-auto px-4">
-      <div class="md:flex items-center gap-10">
-        <div class="md:w-1/2">
-          <h2 class="text-3xl md:text-4xl font-extrabold">Before / After</h2>
-          <p class="mt-3 text-gray-600">Drag the handle to compare. Add 8–12 of your top transformations to build trust fast.</p>
-          <ul class="mt-6 text-sm list-disc pl-5 text-gray-700 space-y-2">
-            <li>Consistent whites and neutrals</li>
-            <li>Natural window detail</li>
-            <li>No haloing, no over‑clarity</li>
-          </ul>
+      <div class="flex items-end justify-between gap-6">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-extrabold">Portfolio</h2>
+          <p class="mt-3 text-gray-600">Click a tile to compare Before/After. Send your image pairs and we'll plug them in.</p>
         </div>
-        <div class="md:w-1/2 mt-8 md:mt-0">
-          <div class="ba-container aspect-[4/3] rounded-2xl overflow-hidden border bg-gray-100">
-            <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?q=80&w=1200&auto=format&fit=crop" class="w-full h-full object-cover" alt="Before" />
-            <div class="ba-after">
-              <img src="https://images.unsplash.com/photo-1523217582562-09d0def993a6?q=80&w=1200&auto=format&fit=crop" class="w-full h-full object-cover" alt="After" />
-            </div>
+        <span class="badge hidden md:inline-block">Before/After</span>
+      </div>
+      <div id="grid" class="mt-10 grid sm:grid-cols-2 md:grid-cols-3 gap-6"></div>
+    </div>
+
+    <!-- Modal -->
+    <div id="baModal" class="fixed inset-0 hidden items-center justify-center bg-black/70 p-4 z-[60]">
+      <div class="relative w-full max-w-4xl">
+        <button id="baClose" class="absolute -top-10 right-0 text-white text-sm underline">Close</button>
+        <div class="bg-white rounded-2xl overflow-hidden shadow-xl">
+          <div class="ba-container aspect-[4/3] bg-gray-100">
+            <img id="baBefore" alt="Before" class="w-full h-full object-cover" />
+            <div class="ba-after"><img id="baAfter" alt="After" class="w-full h-full object-cover" /></div>
             <div class="ba-handle"></div>
           </div>
-          <div class="text-xs text-gray-500 mt-2">Replace images with your before/after pairs.</div>
+          <div id="baCaption" class="p-4 text-sm text-gray-700"></div>
         </div>
       </div>
     </div>
@@ -141,40 +136,36 @@
   <section id="pricing" class="py-20 bg-gray-50">
     <div class="max-w-6xl mx-auto px-4">
       <h2 class="text-3xl md:text-4xl font-extrabold">Pricing</h2>
-      <p class="mt-3 text-gray-600 max-w-2xl">Flat, predictable pricing. Bulk and studio rates on request. Free trial for first‑time clients.</p>
       <div class="mt-10 grid md:grid-cols-3 gap-6">
-        <div class="bg-white rounded-2xl p-6 border shadow-sm flex flex-col">
-          <h3 class="font-bold text-lg">Standard Editing</h3>
-          <div class="mt-2 text-3xl font-extrabold">$0.90<span class="text-base font-semibold text-gray-500"> / image</span></div>
-          <ul class="mt-4 text-sm text-gray-700 space-y-2">
-            <li>Manual HDR blend</li>
-            <li>Color & geometry fix</li>
-            <li>12–24h TAT</li>
-          </ul>
-          <a href="#contact" class="mt-6 inline-flex justify-center rounded-xl bg-black text-white px-4 py-2 font-semibold">Start Trial</a>
+        <div class="bg-white rounded-2xl p-6 border shadow-sm">
+          <h3 class="font-bold text-lg">Photo Editing</h3>
+          <div class="mt-2 text-3xl font-extrabold">From $0.7<span class="text-base font-semibold text-gray-500"> / image</span></div>
+          <p class="text-sm mt-2">TAT: 12h</p>
         </div>
-        <div class="bg-white rounded-2xl p-6 border shadow-sm flex flex-col">
+        <div class="bg-white rounded-2xl p-6 border shadow-sm">
           <h3 class="font-bold text-lg">Virtual Dusk</h3>
-          <div class="mt-2 text-3xl font-extrabold">$5<span class="text-base font-semibold text-gray-500"> / image</span></div>
-          <ul class="mt-4 text-sm text-gray-700 space-y-2">
-            <li>Believable sky & lights</li>
-            <li>Reflection & glow pass</li>
-            <li>24–36h TAT</li>
-          </ul>
-          <a href="#contact" class="mt-6 inline-flex justify-center rounded-xl bg-black text-white px-4 py-2 font-semibold">Start Trial</a>
+          <div class="mt-2 text-3xl font-extrabold">From $5<span class="text-base font-semibold text-gray-500"> / image</span></div>
+          <p class="text-sm mt-2">TAT: 12h</p>
         </div>
-        <div class="bg-white rounded-2xl p-6 border shadow-sm flex flex-col">
+        <div class="bg-white rounded-2xl p-6 border shadow-sm">
           <h3 class="font-bold text-lg">Virtual Staging</h3>
-          <div class="mt-2 text-3xl font-extrabold">from $15<span class="text-base font-semibold text-gray-500"> / image</span></div>
-          <ul class="mt-4 text-sm text-gray-700 space-y-2">
-            <li>Scandi / Magazine styles</li>
-            <li>2–3 day delivery</li>
-            <li>Unlimited revisions</li>
-          </ul>
-          <a href="#contact" class="mt-6 inline-flex justify-center rounded-xl bg-black text-white px-4 py-2 font-semibold">Start Trial</a>
+          <div class="mt-2 text-3xl font-extrabold">From $15<span class="text-base font-semibold text-gray-500"> / image</span></div>
+          <p class="text-sm mt-2">TAT: 12h</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 border shadow-sm">
+          <h3 class="font-bold text-lg">Item Removal</h3>
+          <div class="mt-2 text-3xl font-extrabold">From $1<span class="text-base font-semibold text-gray-500"> / image</span></div>
+        </div>
+        <div class="bg-white rounded-2xl p-6 border shadow-sm">
+          <h3 class="font-bold text-lg">Floor Plans</h3>
+          <p class="mt-2 text-sm">2D: From $7 / storey<br>3D: Quote Fotoground<br>TAT: 24–48h</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 border shadow-sm">
+          <h3 class="font-bold text-lg">Video & Social Media</h3>
+          <p class="mt-2 text-sm">Quote Fotoground<br>TAT: 24h</p>
         </div>
       </div>
-      <p class="text-xs text-gray-500 mt-4">Note: Replace the above with your actual price list.</p>
+      <div class="mt-4 text-sm"> <span class="badge">Free trial</span> 1 job &lt; 25 images · Bulk discount available</div>
     </div>
   </section>
 
@@ -183,22 +174,10 @@
     <div class="max-w-6xl mx-auto px-4">
       <h2 class="text-3xl md:text-4xl font-extrabold">Workflow</h2>
       <div class="mt-10 grid md:grid-cols-4 gap-6">
-        <div class="bg-gray-50 border rounded-2xl p-5"><div class="text-sm uppercase tracking-wide text-gray-500">01</div><div class="font-semibold mt-2">Brief & Style Setup</div><p class="text-sm text-gray-600 mt-2">We learn your look with 3–5 jobs and lock it in a style guide.</p></div>
-        <div class="bg-gray-50 border rounded-2xl p-5"><div class="text-sm uppercase tracking-wide text-gray-500">02</div><div class="font-semibold mt-2">Production</div><p class="text-sm text-gray-600 mt-2">Editors blend by hand; QC checks every file for consistency.</p></div>
-        <div class="bg-gray-50 border rounded-2xl p-5"><div class="text-sm uppercase tracking-wide text-gray-500">03</div><div class="font-semibold mt-2">Delivery</div><p class="text-sm text-gray-600 mt-2">12–24h via your platform or secure cloud link.</p></div>
-        <div class="bg-gray-50 border rounded-2xl p-5"><div class="text-sm uppercase tracking-wide text-gray-500">04</div><div class="font-semibold mt-2">Feedback Loop</div><p class="text-sm text-gray-600 mt-2">Unlimited revisions; we update the guide as your style evolves.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Testimonials -->
-  <section class="py-20 bg-gray-50">
-    <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-3xl md:text-4xl font-extrabold">What clients say</h2>
-      <div class="mt-10 grid md:grid-cols-3 gap-6">
-        <blockquote class="bg-white border rounded-2xl p-6 text-sm text-gray-700">“Super consistent across seasons. The window detail and white balance are on point.”<div class="mt-3 text-xs text-gray-500">— Real Estate Photographer, CA</div></blockquote>
-        <blockquote class="bg-white border rounded-2xl p-6 text-sm text-gray-700">“Fast and reliable. Revisions are painless and they remember our preferences.”<div class="mt-3 text-xs text-gray-500">— Media Studio, TX</div></blockquote>
-        <blockquote class="bg-white border rounded-2xl p-6 text-sm text-gray-700">“Staging looks believable and aligned with our market. Great ROI.”<div class="mt-3 text-xs text-gray-500">— Agent Team, UK</div></blockquote>
+        <div class="bg-gray-50 border rounded-2xl p-5"><div class="text-sm uppercase tracking-wide text-gray-500">01</div><div class="font-semibold mt-2">Brief & Style Setup</div><p class="text-sm text-gray-600 mt-2">3–5 jobs to learn your look, lock a style sheet.</p></div>
+        <div class="bg-gray-50 border rounded-2xl p-5"><div class="text-sm uppercase tracking-wide text-gray-500">02</div><div class="font-semibold mt-2">Production</div><p class="text-sm text-gray-600 mt-2">Manual blend + QC checks every file.</p></div>
+        <div class="bg-gray-50 border rounded-2xl p-5"><div class="text-sm uppercase tracking-wide text-gray-500">03</div><div class="font-semibold mt-2">Delivery</div><p class="text-sm text-gray-600 mt-2">12h via your platform or secure cloud.</p></div>
+        <div class="bg-gray-50 border rounded-2xl p-5"><div class="text-sm uppercase tracking-wide text-gray-500">04</div><div class="font-semibold mt-2">Feedback Loop</div><p class="text-sm text-gray-600 mt-2">Unlimited revisions; we update the guide.</p></div>
       </div>
     </div>
   </section>
@@ -210,15 +189,15 @@
       <div class="mt-8 divide-y border rounded-2xl bg-gray-50">
         <details class="p-5" open>
           <summary class="font-semibold cursor-pointer">Turnaround time?</summary>
-          <p class="mt-2 text-sm text-gray-700">Standard edits: 12–24 hours. Virtual staging: 2–3 days depending on set complexity.</p>
+          <p class="mt-2 text-sm text-gray-700">Photo editing & virtual dusk: 12h. Virtual staging: 12h. Floor plans & video: 24–48h depending on complexity.</p>
         </details>
         <details class="p-5">
           <summary class="font-semibold cursor-pointer">Do you offer a free trial?</summary>
-          <p class="mt-2 text-sm text-gray-700">Yes. Send 3–5 images with your preferred look; we’ll return edits and a quote.</p>
+          <p class="mt-2 text-sm text-gray-700">Yes — 1 job &lt; 25 images for first-time clients.</p>
         </details>
         <details class="p-5">
-          <summary class="font-semibold cursor-pointer">How do we share files?</summary>
-          <p class="mt-2 text-sm text-gray-700">Your platform (Dropbox, Drive, Pixieset, BoxBrownie-style portals) or ours.</p>
+          <summary class="font-semibold cursor-pointer">Bulk discount?</summary>
+          <p class="mt-2 text-sm text-gray-700">Available for studios and monthly volume. Contact us for a tailored quote.</p>
         </details>
       </div>
     </div>
@@ -227,30 +206,14 @@
   <!-- Contact -->
   <section id="contact" class="py-20 bg-gray-50">
     <div class="max-w-6xl mx-auto px-4">
-      <div class="md:flex items-start gap-10">
-        <div class="md:w-1/2">
-          <h2 class="text-3xl md:text-4xl font-extrabold">Get a Quote</h2>
-          <p class="mt-3 text-gray-600">Tell us your volume, usual TAT, and any style notes. We reply within a few hours (GMT+7).</p>
-          <ul class="mt-6 text-sm text-gray-700 space-y-2">
-            <li>Email: <a href="mailto:hello@yourbrand.com" class="underline">hello@yourbrand.com</a></li>
-            <li>WhatsApp / Telegram: +84 9xx xxx xxx</li>
-            <li>Hours: 08:00–24:00 GMT+7 (cover US & UK mornings)</li>
-          </ul>
-        </div>
-        <div class="md:w-1/2 mt-8 md:mt-0">
-          <!-- Formspree starter form (replace with your endpoint) -->
-          <form action="https://formspree.io/f/xyyylabs" method="POST" class="bg-white border rounded-2xl p-6 shadow-sm">
-            <div class="grid md:grid-cols-2 gap-4">
-              <label class="text-sm">Name<input required name="name" class="mt-1 w-full border rounded-xl px-3 py-2" placeholder="Your name"></label>
-              <label class="text-sm">Email<input required name="email" type="email" class="mt-1 w-full border rounded-xl px-3 py-2" placeholder="you@email.com"></label>
-            </div>
-            <label class="text-sm block mt-4">Company<input name="company" class="mt-1 w-full border rounded-xl px-3 py-2" placeholder="Studio / Agency"></label>
-            <label class="text-sm block mt-4">Message<textarea required name="message" class="mt-1 w-full border rounded-xl px-3 py-2 h-28" placeholder="Volume, services, links to samples..."></textarea></label>
-            <button class="mt-4 rounded-xl bg-black text-white px-5 py-3 font-semibold">Send</button>
-          </form>
-          <p class="text-xs text-gray-500 mt-2">Replace the Formspree endpoint with your own to receive emails.</p>
-        </div>
-      </div>
+      <h2 class="text-3xl md:text-4xl font-extrabold">Contact Us</h2>
+      <p class="mt-3 text-gray-600">We reply within a few hours (6AM – 12AM GMT+7).</p>
+      <ul class="mt-6 text-sm text-gray-700 space-y-2">
+        <li>Email: <a href="mailto:info@fotoground.com" class="underline">info@fotoground.com</a></li>
+        <li>Tel/WhatsApp: +84 974 267 092</li>
+        <li>Instagram: <a href="https://www.instagram.com/fotogroundvn/" class="underline">@fotogroundvn</a></li>
+        <li>Working hours: 6AM – 12AM (GMT+7)</li>
+      </ul>
     </div>
   </section>
 
@@ -262,26 +225,115 @@
   </footer>
 
   <script>
-    // Year
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    // Before/After drag logic
-    const container = document.querySelector('.ba-container');
-    const after = document.querySelector('.ba-after');
-    const handle = document.querySelector('.ba-handle');
-    function setX(clientX){
-      const rect = container.getBoundingClientRect();
-      let x = Math.min(Math.max(clientX - rect.left, 0), rect.width);
-      const pct = (x / rect.width) * 100;
-      after.style.width = pct + '%';
-      handle.style.left = pct + '%';
+    // ------ Portfolio data (replace with your real pairs when ready)
+    const portfolioPairs = [
+      {
+        title: 'Living Room',
+        before: 'https://images.unsplash.com/photo-1507089947368-19c1da9775ae?q=80&w=1600&auto=format&fit=crop',
+        after:  'https://images.unsplash.com/photo-1523217582562-09d0def993a6?q=80&w=1600&auto=format&fit=crop'
+      },
+      {
+        title: 'Kitchen',
+        before: 'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1600&auto=format&fit=crop',
+        after:  'https://images.unsplash.com/photo-1505691723518-36a5ac3b2d52?q=80&w=1600&auto=format&fit=crop'
+      },
+      {
+        title: 'Bedroom',
+        before: 'https://images.unsplash.com/photo-1505691938895-1758d7feb511?q=80&w=1600&auto=format&fit=crop',
+        after:  'https://images.unsplash.com/photo-1505691723518-36a5ac3b2d52?q=80&w=1600&auto=format&fit=crop'
+      }
+    ];
+
+    // Build grid
+    const grid = document.getElementById('grid');
+    if(grid){
+      portfolioPairs.forEach((pair, idx)=>{
+        const tile = document.createElement('button');
+        tile.className = 'group relative overflow-hidden rounded-2xl border bg-white shadow-sm text-left';
+        tile.innerHTML = `
+          <div class="aspect-[4/3] overflow-hidden">
+            <img src="${pair.after}" alt="${pair.title} after" class="w-full h-full object-cover group-hover:scale-105 transition" />
+          </div>
+          <div class="p-4 flex items-center justify-between">
+            <div class="font-semibold">${pair.title}</div>
+            <span class="badge">BA</span>
+          </div>`;
+        tile.addEventListener('click', ()=> openBA(idx));
+        grid.appendChild(tile);
+      });
     }
-    let dragging = false;
-    container.addEventListener('mousedown', e=>{ dragging = true; setX(e.clientX); });
-    window.addEventListener('mousemove', e=>{ if(dragging) setX(e.clientX); });
-    window.addEventListener('mouseup', ()=> dragging = false);
-    container.addEventListener('touchstart', e=>{ setX(e.touches[0].clientX); });
-    container.addEventListener('touchmove', e=>{ setX(e.touches[0].clientX); });
+
+    // Modal + BA logic
+    const modal = document.getElementById('baModal');
+    const baBefore = document.getElementById('baBefore');
+    const baAfter  = document.getElementById('baAfter');
+    const baCaption= document.getElementById('baCaption');
+    const baClose  = document.getElementById('baClose');
+    let c = null, after=null, handle=null, dragging=false;
+
+    function setupHandle(){
+      c = modal.querySelector('.ba-container');
+      after = c.querySelector('.ba-after');
+      handle = c.querySelector('.ba-handle');
+      function setX(clientX){
+        const rect = c.getBoundingClientRect();
+        let x = Math.min(Math.max(clientX - rect.left, 0), rect.width);
+        const pct = (x / rect.width) * 100;
+        after.style.width = pct + '%';
+        handle.style.left = pct + '%';
+      }
+      c.addEventListener('mousedown', e=>{ dragging = true; setX(e.clientX); });
+      window.addEventListener('mousemove', e=>{ if(dragging) setX(e.clientX); });
+      window.addEventListener('mouseup', ()=> dragging = false);
+      c.addEventListener('touchstart', e=>{ setX(e.touches[0].clientX); });
+      c.addEventListener('touchmove', e=>{ setX(e.touches[0].clientX); });
+    }
+
+    function openBA(idx){
+      const p = portfolioPairs[idx];
+      baBefore.src = p.before; baAfter.src = p.after; baCaption.textContent = p.title;
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      // reset handle position to center
+      if(!c) setupHandle();
+      after.style.width = '50%';
+      handle.style.left = '50%';
+    }
+
+    function closeBA(){
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    if(baClose){ baClose.addEventListener('click', closeBA); }
+    if(modal){ modal.addEventListener('click', (e)=>{ if(e.target === modal) closeBA(); }); }
+  </script>
+</body>
+</html>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // Before/After drag (if you add a BA block in Portfolio later)
+    const c = document.querySelector('.ba-container');
+    if(c){
+      const after = c.querySelector('.ba-after');
+      const handle = c.querySelector('.ba-handle');
+      function setX(clientX){
+        const rect = c.getBoundingClientRect();
+        let x = Math.min(Math.max(clientX - rect.left, 0), rect.width);
+        const pct = (x / rect.width) * 100;
+        after.style.width = pct + '%';
+        handle.style.left = pct + '%';
+      }
+      let dragging=false;
+      c.addEventListener('mousedown', e=>{dragging=true; setX(e.clientX);});
+      window.addEventListener('mousemove', e=>{ if(dragging) setX(e.clientX); });
+      window.addEventListener('mouseup', ()=> dragging=false);
+      c.addEventListener('touchstart', e=> setX(e.touches[0].clientX));
+      c.addEventListener('touchmove', e=> setX(e.touches[0].clientX));
+    }
   </script>
 </body>
 </html>
